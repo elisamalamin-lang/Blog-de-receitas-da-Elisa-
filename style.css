@@ -4,20 +4,33 @@ footer {
     color: #f8abdf;
     text-align: center;
     max-width: 800px;
-     margin: 0 auto
+     margin: 0 auto;
 }
 
-     Ç:root{
---cor-primária:#a8e0ff
---cor-secundária:#8ee3f5
---cor fundo:#70cad1
---cor-contraste:#96d6f3
---cor-botao:#83d0e2
+:root{
+--cor-primária:#a8e0ff;
+--cor-secundária:#8ee3f5;
+--cor-fundo:#70cad1;
+--cor-texto: #ffff
+--cor-contraste:#ffff;
+--cor-botao:#83d0e2;
+}
+* {  
+    transition: backgroud-color 0.8s ease;
+}
+.tema-escuro{
+--cor-primária:#03045e;
+--cor-secundária:#023e8a;
+--cor-fundo:#0f4c5c;
+--cor-texto: #219ebc;
+--cor-contraste:#073b4c;
+--cor-botao:#2f6690;
 
-     }
+}
+     
 header {
-    background-color: #631850;
-    color: #ffffff;
+    background-color: var(--cor-fundo)
+    color: var(--cor-fundo)
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -25,8 +38,8 @@ header {
 }
 
 main {
-    background-color: #ffffff;
-    color: #63184a;
+    background-color: var(--cor-fundo)
+    color: var(--cor-fundo)
     max-width: 800px;
     margin: 0 auto;
     padding: 16px;
